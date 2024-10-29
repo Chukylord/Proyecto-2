@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saphirus Arroyo Seco</title>
+    <link rel="stylesheet" href="style_contacto.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Saphirus Arroyo Seco</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="boton" href="index.html">Inicio</a></li>
+            <li><a class="boton" href="contacto.html">Hacé tu pedido</a></li>
+            <li><a class="boton" href="productos.html">Productos</a></li>
+            <li><a class="boton" href="datos_nuestros.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="titulo-central">Contáctanos</h2>
+
+    <form class="formulario-contacto" action="#" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        
+        <label for="productos-adquirir">¿Qué productos te gustaría adquirir?</label>
+        <textarea id="productos-adquirir" name="productos-adquirir" rows="4" placeholder="Escribe los productos que quieres comprar..."></textarea>
+        
+        <label>¿Desea envío a domicilio?</label>
+        <select name="envio" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>¿Cuáles son tus productos preferidos?</label>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto1" name="productos[]" value="producto1">
+                <label for="producto1">Home-Spray</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto2" name="productos[]" value="producto2">
+                <label for="producto2">Difusores</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto3" name="productos[]" value="producto3">
+                <label for="producto3">Textiles</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto4" name="productos[]" value="producto4">
+                <label for="producto4">Aerosoles</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto5" name="productos[]" value="producto5">
+                <label for="producto5">Mini-concentrado</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto6" name="productos[]" value="producto6">
+                <label for="producto6">Touch</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto7" name="productos[]" value="producto7">
+                <label for="producto7">Caritas/Route 66</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="producto8" name="productos[]" value="producto8">
+                <label for="producto8">Aceites</label>
+            </div>
+        </div>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer class="pie">
+        <small>Saphirus Arroyo Seco, aromatizamos tu ambiente 😉</small>
+    </footer>
+</body>
+</html>

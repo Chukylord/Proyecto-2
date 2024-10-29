@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EAD8B1;
+    font-family: Sans-serif, Arial, Helvetica;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.titulo-central {
+    color: #001F3F;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+header {
+    background: #001F3F;
+    color: #6A9AB0;
+    text-align: center;
+    margin: 0px 0 0 0;
+    padding: 60px 10px;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el título y permite que el logo esté a la izquierda */
+    background-color: #001F3F;
+    padding: 40px 10px;
+    position: relative; /* Necesario para colocar el logo en la izquierda */
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    position: absolute; /* Coloca el logo en la izquierda */
+    left: 120px; /* Ajusta el valor para mover el logo más a la derecha */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    background: #3A6D8C;
+    padding: 20px;
+    margin: 0px 0px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+.boton {
+    margin: 5px;
+    padding: 10px;
+    color: #EAD8B1;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: aliceblue;
+    color: brown;
+    border-radius: 5px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+.seccion {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: 1200px;
+    height: 630px;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+
+.seccion img {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.seccion a:hover {
+    cursor: crosshair;
+    width: 35%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.seccion a {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.barra-izquierda {
+    color: #001F3F;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.barra-izquierda ul {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos de la lista se alineen en fila */
+}
+
+.barra-izquierda li {
+    margin-right: 100px; /* Añade espacio entre los elementos de la lista */
+}
+
+
+.pie {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 2px;
+}
+
+.gal_productos {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .boton {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    header {
+        padding: 40px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .barra-izquierda {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo-central {
+        font-size: 24px;
+    }
+
+    .seccion img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        background: #001F3F;
+        color: #6A9AB0;
+        text-align: center;
+        padding: 60px 10px;
+        box-sizing: border-box;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center; /* Centrará la barra de navegación */
+        align-items: center;
+        background: #3A6D8C;
+        padding: 20px;
+        margin: 0px 0px;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column; /* Hace que los elementos se apilen uno debajo del otro */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+    
+    .boton {
+        margin: 5px;
+        padding: 10px;
+        color: #EAD8B1;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center; /* Centra el texto dentro del botón */
+        width: 100%; /* Para que ocupen todo el espacio */
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .titulo-central {
+        font-size: 20px;
+    }
+
+    .seccion {
+        flex-direction: column; /* Hace que los elementos se apilen uno debajo del otro */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Asegura que los elementos estén centrados verticalmente */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .seccion img {
+        width: 150px; /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 10px 0; /* Agrega espacio entre las imágenes */
+    }
+
+    .seccion a {
+        width: auto; /* Ajusta el ancho de los enlaces para pantallas pequeñas */
+        display: flex;
+        justify-content: center; /* Centra los enlaces */
+    }
+
+
+    .barra-izquierda ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra-izquierda li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

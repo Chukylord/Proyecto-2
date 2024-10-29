@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAD8B1;
+    font-family: Sans-serif, Arial, Helvetica;
+}
+
+header {
+    background-color: #001F3F;
+    color: #6A9AB0;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    background-color: #3A6D8C;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+.boton {
+    margin: 5px;
+    padding: 10px;
+    color: #EAD8B1;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: aliceblue;
+    color: brown;
+    border-radius: 5px;
+}
+
+.titulo-central {
+    color: #001F3F;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.galeria {
+    display: flex; /* Alinear imágenes en fila */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en varias filas */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    padding: 20px;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.producto {
+    cursor: pointer;
+}
+
+.producto img {
+    width: 250px; /* Establecer un ancho fijo para las imágenes */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Opcional: para esquinas redondeadas */
+    transition: transform 0.3s;
+}
+
+.producto img:hover {
+    transform: scale(1.25);
+}
+
+.pie {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 2px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia la barra de navegación a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Hace que los elementos se apilen uno debajo del otro */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .boton {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        padding: 8px; /* Reduce el padding */
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    }
+
+    .titulo-central {
+        font-size: 24px; /* Reduce el tamaño del título central */
+    }
+
+    .producto img {
+        width: 200px; /* Ajusta el tamaño de las imágenes */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 5px; /* Reduce el padding del header */
+    }
+
+    .titulo-central {
+        font-size: 20px; /* Reduce aún más el tamaño del título central */
+    }
+
+    .navbar {
+        padding: 10px; /* Reduce el padding de la barra de navegación */
+    }
+
+    .boton {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+        padding: 6px; /* Ajusta el padding */
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    }
+
+    .producto img {
+        width: 150px; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .pie {
+        font-size: 12px; /* Ajusta el tamaño de la fuente en el pie */
+    }
+}

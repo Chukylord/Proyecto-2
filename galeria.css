@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Sans-serif, Arial, Helvetica;
+}
+
+header {
+    background-color: #001F3F;
+    color: #6A9AB0;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    background-color: #3A6D8C;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+.boton {
+    margin: 5px;
+    padding: 10px;
+    color: #EAD8B1;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: aliceblue;
+    color: brown;
+    border-radius: 5px;
+}
+
+.producto-detalle {
+    display: flex; /* Cambiar a flex para alinear imágenes en fila */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en varias filas */
+    justify-content: center; /* Centrar las imágenes en la página */
+    padding: 20px;
+}
+
+.producto-detalle img {
+    width: 300px; /* Ancho fijo para las imágenes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px;
+    margin: 10px; /* Espacio entre las imágenes */
+    transition: transform 0.3s;
+}
+
+.producto-detalle img:hover {
+    transform: scale(1.25); /* Efecto de zoom al pasar el ratón */
+}
+
+.pie {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 2px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 5px;
+    }
+
+    .navbar {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra los elementos */
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Cambia a columna */
+        gap: 10px; /* Aumenta el espacio entre botones */
+        width: 100%; /* Asegura que la lista ocupe todo el ancho */
+        padding: 0;
+    }
+
+    .boton {
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        padding: 10px;
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    }
+
+    .producto-detalle {
+        flex-direction: column; /* Cambia a columna para que las imágenes se apilen */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .producto-detalle img {
+        width: 100%; /* Asegúrate de que las imágenes ocupen todo el ancho */
+        max-width: 300px; /* Ancho máximo para mantener la proporción */
+        margin: 10px 0; /* Espacio entre las imágenes */
+    }
+
+    .pie {
+        font-size: 12px; /* Ajusta el tamaño de la fuente en el pie */
+        padding: 10px 2px; /* Reduce el padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 5px; /* Reduce el padding del header */
+    }
+
+    .navbar {
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .navbar ul {
+        gap: 10px; /* Aumenta el espacio entre botones */
+    }
+
+    .boton {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+
+    .producto-detalle {
+        flex-direction: column; /* Cambia a columna para que las imágenes se apilen */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .producto-detalle img {
+        width: 100%; /* Asegúrate de que las imágenes ocupen todo el ancho */
+        max-width: 250px; /* Ancho máximo para mantener la proporción */
+        margin: 10px 0; /* Espacio entre las imágenes */
+    }
+
+    .pie {
+        font-size: 12px; /* Ajusta el tamaño de la fuente en el pie */
+        padding: 10px 2px; /* Reduce el padding */
+    }
+
+    .contacto-info li {
+        font-size: 16px; /* Ajusta el tamaño de la fuente de la lista de contactos */
+    }
+}

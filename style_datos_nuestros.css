@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAD8B1;
+    font-family: Sans-serif, Arial, Helvetica;
+}
+
+header {
+    background-color: #001F3F;
+    color: #6A9AB0;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto-info h2 {
+    margin-bottom: 20px;
+    color: #001F3F;
+}
+
+.contacto-info ul {
+    list-style-type: none;
+}
+
+.contacto-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contacto-info a {
+    color: #3A6D8C;
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+.pie {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 2px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    background-color: #3A6D8C;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+.boton {
+    margin: 5px;
+    padding: 10px;
+    color: #EAD8B1;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: aliceblue;
+    color: brown;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia la barra de navegación a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Hace que los elementos se apilen uno debajo del otro */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .boton {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        padding: 8px; /* Reduce el padding */
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    }
+
+    .contacto-info li {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para dispositivos más pequeños */
+    }
+
+    .contacto-info h2 {
+        font-size: 24px; /* Reduce el tamaño del título */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 5px; /* Reduce el padding del header */
+    }
+
+    .contacto-info h2 {
+        font-size: 20px; /* Ajusta el tamaño del título en móviles */
+    }
+
+    .contacto-info {
+        width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+        padding: 10px; /* Reduce el padding del contenedor */
+    }
+
+    .contacto-info ul {
+        width: 100%; /* Asegura que la lista ocupe todo el ancho */
+        padding: 0; /* Elimina el padding */
+    }
+
+    .contacto-info li {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para dispositivos más pequeños */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el desbordamiento */
+        text-overflow: ellipsis; /* Agrega "..." si el texto se corta */
+        margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+    }
+
+    .qr-container {
+        display: flex; /* Usa flexbox para centrar la imagen */
+        justify-content: center; /* Centra horizontalmente */
+        max-width: 150px; /* Ajusta el ancho máximo del QR */
+        margin: 10px auto; /* Centra el QR y agrega margen superior */
+    }
+
+    .qr-container img {
+        width: 100%; /* Asegúrate de que la imagen se ajuste a su contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .navbar {
+        padding: 10px; /* Reduce el padding de la barra de navegación */
+    }
+
+    .boton {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+        padding: 6px; /* Ajusta el padding */
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    }
+
+    .pie {
+        font-size: 12px; /* Ajusta el tamaño de la fuente en el pie */
+    }
+}

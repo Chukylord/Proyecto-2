@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAD8B1;
+    font-family: Sans-serif, Arial, Helvetica;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #6A9AB0;
+}
+
+h2.titulo-central {
+    color: #001F3F;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+header {
+    background-color: #001F3F;
+    color: #6A9AB0;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    background-color: #3A6D8C;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+.boton {
+    margin: 5px;
+    padding: 10px;
+    color: #EAD8B1;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: aliceblue;
+    color: brown;
+    border-radius: 5px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #001F3F;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #001F3F;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formulario-contacto textarea {
+    resize: vertical; /* Permitir que el textarea solo se redimensione verticalmente */
+}
+
+.formulario-contacto button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3A6D8C;
+    color: #EAD8B1;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #001F3F;
+}
+
+/* Estilos para los checkboxes y etiquetas */
+.checkbox-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-item {
+    display: flex; /* Usa flex para alinear el checkbox y el texto */
+    align-items: center; /* Alinea el checkbox y el texto verticalmente */
+    margin-bottom: 5px; /* Espacio entre cada opción */
+}
+
+.checkbox-item label {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #001F3F;
+    margin-left: 8px; /* Espacio entre el checkbox y el texto */
+}
+
+.checkbox-item input {
+    width: 16px; /* Define un tamaño específico para el checkbox */
+    height: 16px; /* Define un tamaño específico para el checkbox */
+}
+
+.pie {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 2px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+
+    .navbar {
+        flex-direction: column; /* Cambia la barra de navegación a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Hace que los elementos se apilen uno debajo del otro */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .boton {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .formulario-contacto {
+        width: 90%; /* Aumenta el ancho en pantallas más pequeñas */
+        margin: 10px auto; /* Ajusta el margen */
+    }
+
+    .formulario-contacto label {
+        font-size: 16px; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Reduce aún más el tamaño del título */
+    }
+
+    .navbar {
+        padding: 10px; /* Reduce el padding de la barra de navegación */
+    }
+
+    .boton {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+        padding: 6px; /* Ajusta el padding */
+        width: 100%; /* Hacen que los botones ocupen todo el ancho */
+    }
+
+    .formulario-contacto {
+        width: 95%; /* Aumenta el ancho en pantallas más pequeñas */
+        margin: 5px auto; /* Ajusta el margen */
+    }
+
+    .formulario-contacto label {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+}
