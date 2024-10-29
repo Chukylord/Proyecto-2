@@ -26,7 +26,6 @@ header {
     background: #001F3F;
     color: #6A9AB0;
     text-align: center;
-    margin: 0px 0 0 0;
     padding: 60px 10px;
     box-sizing: border-box;
 }
@@ -34,26 +33,30 @@ header {
 .cabecera {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el título y permite que el logo esté a la izquierda */
+    justify-content: center; /* Centra el título */
     background-color: #001F3F;
+    position: relative; /* Necesario para colocar el logo */
     padding: 40px 10px;
-    position: relative; /* Necesario para colocar el logo en la izquierda */
 }
 
 .logo {
     width: 110px;
     height: auto;
     position: absolute; /* Coloca el logo en la izquierda */
-    left: 120px; /* Ajusta el valor para mover el logo más a la derecha */
+    left: 120px; /* Ajusta el valor para mover el logo a la izquierda */
+    top: 10px; /* Ajusta para que el logo no se superponga con el título */
 }
 
+/* Espacio adicional para que no se superponga */
+header h1 {
+    margin-left: 150px; /* Ajusta el margen izquierdo para dar espacio al logo */
+}
 
 .navbar {
     display: flex;
     justify-content: left;
     background: #3A6D8C;
     padding: 20px;
-    margin: 0px 0px;
 }
 
 .navbar ul {
@@ -141,7 +144,6 @@ article {
     margin-right: 100px; /* Añade espacio entre los elementos de la lista */
 }
 
-
 .pie {
     background: #000;
     color: #fff;
@@ -195,32 +197,40 @@ article {
 }
 
 @media (max-width: 480px) {
-
     header {
         background: #001F3F;
         color: #6A9AB0;
         text-align: center;
-        padding: 60px 10px;
-        box-sizing: border-box;
+        padding: 40px 10px; /* Reduce el padding en pantallas más pequeñas */
     }
-    
+
+    .logo {
+        width: 80px; /* Reduce el tamaño del logo */
+        left: 10px; /* Ajusta la posición a la izquierda */
+    }
+
+    header h1 {
+        font-size: 20px; /* Reduce el tamaño de la fuente del título */
+        margin-left: 100px; /* Reduce el margen izquierdo para dar más espacio al logo */
+    }
+
     .navbar {
         display: flex;
         justify-content: center; /* Centrará la barra de navegación */
         align-items: center;
         background: #3A6D8C;
-        padding: 20px;
+        padding: 10px; /* Reduce el padding */
         margin: 0px 0px;
         width: 100%; /* Asegura que ocupe todo el ancho */
     }
-    
+
     .navbar ul {
         list-style-type: none;
         display: flex;
         flex-direction: column; /* Hace que los elementos se apilen uno debajo del otro */
         align-items: center; /* Centra los elementos en la columna */
     }
-    
+
     .boton {
         margin: 5px;
         padding: 10px;
@@ -233,11 +243,11 @@ article {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 24px; /* Ajusta el tamaño del título */
     }
 
     .titulo-central {
-        font-size: 20px;
+        font-size: 20px; /* Ajusta el tamaño del título central */
     }
 
     .seccion {
@@ -258,7 +268,6 @@ article {
         display: flex;
         justify-content: center; /* Centra los enlaces */
     }
-
 
     .barra-izquierda ul {
         flex-direction: column;
